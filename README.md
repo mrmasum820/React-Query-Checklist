@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+### What?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A library for fetching data in a React application.
 
-## Available Scripts
+### Why?
 
-In the project directory, you can run:
+1. Since React is a UI library, there is no specific pattern for data fetching.
+2. useEffect hook for data fetching and useState hook to maintain component state like loading, error or resulting data.
+3. If the data is needed through the app, we tend to use state management libraries.
+4. Most of the state management libraries are good for working with client state. Ex: ‘theme’ for the application / whether a modal is open
+5. State management libraries are not great for working with asynchronous or server state.
 
-### `npm start`
+### Client vs server state
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**client state**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Persisted in our app memory and accessing or updating it is synchronous.
 
-### `npm test`
+**server state**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Persisted remotely and requires asynchronous APIs for fetching or updating.
 
-### `npm run build`
+Has shared ownership.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data can be updated by someone else without our knowledge.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+UI data may not be in sync with the remote data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Challenging when we have to deal with caching, deduping multiple requests for the same data, updating stale data in the background, performance optimizations etc.
 
-### `npm run eject`
+### Checklists
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Basic queries
+2. Poll data
+3. RQ dev tools
+4. Create reusable query hooks
+5. Query by ID
+6. Parallel queries
+7. Dynamic queries
+8. Dependent queries
+9. Infinite & paginated queries
+10. Update data using mutations
+11. Invalidate queries
+12. Optimistic updates
+13. Axios interceptor
