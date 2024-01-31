@@ -1,8 +1,8 @@
-### What?
+### What is React Query?
 
 A library for fetching data in a React application.
 
-### Why?
+### Why use React Query?
 
 1. Since React is a UI library, there is no specific pattern for data fetching.
 2. useEffect hook for data fetching and useState hook to maintain component state like loading, error or resulting data.
@@ -30,16 +30,16 @@ Challenging when we have to deal with caching, deduping multiple requests for th
 
 ### Checklists
 
-1. Basic queries
+1. Basic queries(RQSuperHeroes)
 2. Poll data
-3. RQ dev tools
-4. Create reusable query hooks
+3. RQ dev tools(index.js)
+4. Create reusable query hooks(fetchSuperHeroes.js)
 5. Query by ID
-6. Parallel queries
-7. Dynamic queries
-8. Dependent queries
-9. Infinite & paginated queries
-10. Update data using mutations
-11. Invalidate queries
-12. Optimistic updates
-13. Axios interceptor
+6. Parallel queries(ParalletQueries.jsx)
+7. Dynamic queries(DynamicParallel.jsx)
+8. Dependent queries(DependentQueries.jsx)
+9. Infinite & paginated queries(PaginatedQueries.jsx and InfiniteQueries.jsx)
+10. Update data using mutations(RQSuperHeroes.jsx)
+11. Invalidate queries(useSuperHeroesData.js)
+12. Optimistic updates(useSuperHeroesData.js)
+13. Axios interceptor(axios-utils)

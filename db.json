@@ -14,6 +14,96 @@
       "id": 3,
       "name": "Wonder Woman",
       "alter": "Princess Diana"
+    },
+    {
+      "id": "cc8f",
+      "name": "The Flash",
+      "alter": "Barry Allen"
+    },
+    {
+      "id": "692e",
+      "name": "Shazam",
+      "alter": "Billy Batson"
+    },
+    {
+      "id": "f562",
+      "name": "Green Arrow",
+      "alter": "Oliver Queen"
+    },
+    {
+      "id": "1fa5",
+      "name": "Catwoman",
+      "alter": "Selina Kyle"
+    },
+    {
+      "id": "240e",
+      "name": "Aquaman",
+      "alter": "Arthur Curry"
+    },
+    {
+      "id": "37c1",
+      "name": "Qwe",
+      "alter": "Qwerty"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "MH Shawan"
+    },
+    {
+      "id": 2,
+      "name": "Atik Howlader"
+    },
+    {
+      "id": 1,
+      "name": "Biplob Noman"
+    }
+  ],
+  "users": [
+    {
+      "id": "mrmasum820@gmail.com",
+      "homeId": "techmrmasum"
+    }
+  ],
+  "homes": [
+    {
+      "id": "techmrmasum",
+      "courses": ["react", "node", "mongodb"]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "yellow"
+    },
+    {
+      "id": 5,
+      "label": "black"
+    },
+    {
+      "id": 6,
+      "label": "white"
+    },
+    {
+      "id": 7,
+      "label": "orange"
+    },
+    {
+      "id": 8,
+      "label": "purple"
     }
   ]
 }

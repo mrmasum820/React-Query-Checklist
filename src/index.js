@@ -10,6 +10,12 @@ import Main from "./layout/Main";
 import Home from "./components/Home";
 import SuperHeroes from "./components/SuperHeroes";
 import RQSuperHeroes from "./components/RQSuperHeroes";
+import RQSuperHero from "./components/RQSuperHero";
+import ParallelQueries from "./components/ParallelQueries";
+import DynamicParallel from "./components/DynamicParallel";
+import DependentQueries from "./components/DependentQueries";
+import PaginatedQueries from "./components/PaginatedQueries";
+import InfiniteQueries from "./components/InfiniteQueries";
 
 const queryClient = new QueryClient();
 
@@ -26,9 +32,34 @@ const router = createBrowserRouter([
         path: "/super-heroes",
         element: <SuperHeroes />,
       },
+
       {
         path: "/rq-super-heroes",
         element: <RQSuperHeroes />,
+      },
+      {
+        path: "/rq-super-heroes/:heroId",
+        element: <RQSuperHero />,
+      },
+      {
+        path: "/rq-parallel",
+        element: <ParallelQueries />,
+      },
+      {
+        path: "/rq-dynamic-parallel",
+        element: <DynamicParallel heroIds={[1, 3]} />,
+      },
+      {
+        path: "/rq-dependent",
+        element: <DependentQueries email="mrmasum820@gmail.com" />,
+      },
+      {
+        path: "/rq-paginated",
+        element: <PaginatedQueries />,
+      },
+      {
+        path: "/rq-infinite",
+        element: <InfiniteQueries />,
       },
     ],
   },

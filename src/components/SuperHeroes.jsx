@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const SuperHeroes = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +27,7 @@ const SuperHeroes = () => {
     return <div>{error}</div>;
   }
   return (
-    <div>
+    <div style={{ paddingLeft: "20px" }}>
       <h2>Super heroes page</h2>
       {data.map((hero) => (
         <div key={hero.name}>{hero.name}</div>
